@@ -1,61 +1,165 @@
 body {
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+  }
+  
+  a {
     text-decoration: none;
-    color: #fff;
-}
-
-.hero {
-    background-image: url('background.jpg');
+    color: #333;
+  }
+  
+  a:hover {
+    color: #007bff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #f2f2f2;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .logo {
+    float: right;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .hero {
+    background-image: url("https://i.imgur.com/y9v7E3z.jpg");
     background-size: cover;
     background-position: center;
     height: 500px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    color: white;
     text-align: center;
-}
-
-.hero-text {
-    color: #fff;
-}
-
-.content {
-    padding: 50px;
-}
-
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0062cc;
+  }
+  
+  .destinations {
+    padding-top: 50px;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .card p {
+    padding: 10px;
+  }
+  
+  /* Prices section styles */
+  .prices {
+    padding-top: 50px;
+    background-color: #f2f2f2;
+  }
+  
+  .price-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .price {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .price p {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact section styles */
+  .contact {
+    padding-top: 50px;
+    background-color: #eee;
+  }
+  
+  .contact-info {
+    padding: 20px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-media a {
     margin-right: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+    font-size: 20px;
