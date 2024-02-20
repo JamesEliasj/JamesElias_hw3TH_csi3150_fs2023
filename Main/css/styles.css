@@ -1,22 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-:root {
+  font-family: "Merriweather", serif, Arial, Helvetica, sans-serif;
   --font-color-primary: #f0c32a;
   --font-color-secondary: #fff;
-}
-
-body {
-  font-family: "Merriweather", serif, Arial, Helvetica, sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
+  --circle-bg: #000;
 }
 
 p {
@@ -25,9 +17,9 @@ p {
 }
 
 .cta {
-  color: var(--font-color-primary);
-  background: transparent;
-  border: 1px solid var(--font-color-primary);
+  color: #000;
+  border: var(--font-color-primary);
+  background: var(--font-color-primary);
   width: 152px;
   height: 41px;
   font-size: 16px;
@@ -36,18 +28,23 @@ p {
 }
 
 .cta:hover {
-  background: var(--font-color-primary);
-  color: var(--font-color-secondary);
+  background: transparent;
+  color: var(--font-color-primary);
   border: 1px solid var(--font-color-primary);
 }
 
-span.material-symbols-rounded,
-a.material-symbols-rounded {
+span.material-symbols-rounded {
   font-size: 8.4rem;
   color: var(--font-color-primary);
-  text-decoration: none;
 }
 
+a.material-symbols-rounded {
+  color: var(--font-color-primary);
+  font-size: 8.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease
+}
 a.material-symbols-rounded:hover {
   color: var(--font-color-secondary);
 }
@@ -90,7 +87,12 @@ header .header-text h1 {
   color: var(--font-color-primary);
 }
 
-/* First section styles */
+header .header-text #tour {
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
 .first-sec {
   height: 530px;
 }
@@ -240,7 +242,6 @@ header .header-text h1 {
   color: var(--font-color-secondary);
 }
 
-/* Fourth section styles */
 .fourth-sec {
   height: 495px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/mountain5.jpg");
@@ -263,8 +264,9 @@ header .header-text h1 {
   align-items: center;
   background: var(--circle-bg);
   border-radius: 50%;
-  height: 194px;
-  width: 194px;
+  --square: 194px;
+  height: var(--square);
+  width: var(--square);
 }
 
 .fourth-sec .circle h3 {
@@ -299,8 +301,9 @@ header .header-text h1 {
 }
 
 .fifth-sec .fifth-info img {
-  height: 200px;
-  width: 200px;
+  --square: 200px;
+  height: var(--square);
+  width: var(--square);
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 3%;
@@ -318,6 +321,10 @@ header .header-text h1 {
   font-size: 1.3rem;
   margin-bottom: -1%;
   color: var(--font-color-secondary);
+}
+
+.fifth-sec .fifth-info span {
+  margin-bottom: -3%;
 }
 
 .sixth-sec {
