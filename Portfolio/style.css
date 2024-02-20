@@ -64,9 +64,6 @@ body {
 }
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
   display: flex;
   flex-wrap: wrap;
 }
