@@ -45,7 +45,7 @@ body {
   }
   
   .hero {
-    background-image: url("https://i.imgur.com/y9v7E3z.jpg");
+    background-image: url('detroit.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
