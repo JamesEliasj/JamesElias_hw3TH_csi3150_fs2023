@@ -21,11 +21,9 @@ body {
 }
 
 .split {
-  text-align: right;
-}
-
-.center-text {
-  text-align: right;
+  flex: 1;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .horizontal {
@@ -61,8 +59,11 @@ body {
 }
 
 .column {
-  width: 50%; 
+  width: 33.33%;
   padding: 5px;
+}
+
+.row::after {
   display: flex;
   flex-wrap: wrap;
 }
